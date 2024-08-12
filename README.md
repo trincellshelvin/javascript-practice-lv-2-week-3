@@ -18,4 +18,4 @@ Your goal is to get practice with the syntax of objects, dot notation and functi
 
 ## Turn in
 
-When you are finished, create a PR back to the original repo, or just turn it in to the course website.
+When you are finished, create a PR back to the original repo and turn the PR's address, or just turn it in to the course website.
