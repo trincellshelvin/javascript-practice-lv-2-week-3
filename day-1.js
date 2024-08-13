@@ -45,7 +45,19 @@ console.log(pet.age);     // Output: 5
 // Create an object named `city` with the following properties:
 // `name` (string), `population` (number), `country` (string)
 // Log each property using dot notation.
+const city = {
+  name: 'Baton Rouge',
+  meaning: 'Red Stick in French',
+  water: 'Mississippi River',
+  parish: 'East Baton Rouge Parish',
+  year: 1894
+};
 
+console.log(city.name);
+console.log(city.meaning);
+console.log(city.water);
+console.log(city.parish);
+console.log(city.year);
 
 // Example 3: Creating a Car Object
 const car = {
