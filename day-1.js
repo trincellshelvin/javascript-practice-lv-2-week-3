@@ -100,7 +100,15 @@ console.log(product.inStock); // Output: true
 // Create an object named `restaurant` with the following properties:
 // `name` (string), `type` (string), `rating` (number)
 // Log each property using dot notation.
+const restaurant ={
+  name: 'Chipotle',
+  type: 'fast-casual',
+  rating: 4.1
+};
 
+console.log(restaurant.name);
+console.log(restaurant.type);
+console.log(restaurant.rating);
 
 // Example 5: Creating a Student Object
 const student = {
