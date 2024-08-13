@@ -18,8 +18,17 @@ console.log(book.pages);  // Output: 281
 // Create an object named `movie` with the following properties:
 // `title` (string), `director` (string), `year` (number)
 // Log each property using dot notation.
+const movie = {
+  title: 'Despicable Me 4',
+  director: 'Chris Renaud and Patrick Delage',
+  leading: 'Steve Carell',
+  year: 2024
+};
 
-
+console.log(movie.title);
+console.log(movie.director);
+console.log(movie.leading);
+console.log(movie.year);
 // Example 2: Creating a Pet Object
 const pet = {
   name: 'Whiskers',
