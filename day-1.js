@@ -75,8 +75,15 @@ console.log(car.year);   // Output: 2021
 // Create an object named `computer` with the following properties:
 // `brand` (string), `processor` (string), `ram` (number)
 // Log each property using dot notation.
+const computer = {
+  brand: 'Apple iMac',
+  processor: 'Apple M3 Chip',
+  ram: 8 
+};
 
-
+console.log(computer.brand);
+console.log(computer.processor);
+console.log(computer.ram);
 // Example 4: Creating a Product Object
 const product = {
   name: 'Laptop',
