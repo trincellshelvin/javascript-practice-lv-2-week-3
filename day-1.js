@@ -127,3 +127,12 @@ console.log(student.grade);     // Output: A
 // `address` (string), `size` (number), `hasGarage` (boolean)
 // Log each property using dot notation.
 
+const house = {
+  address: '57384 Mount Pleasant Road, Bougalusa, LA 70427',
+  size: '3 bed 2 bath',
+  hasGarage: true
+};
+
+console.log(house.address);
+console.log(house.size);
+console.log(house.hasGarage);
