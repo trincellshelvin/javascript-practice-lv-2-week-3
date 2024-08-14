@@ -159,7 +159,28 @@ console.log(product.inStock); // Output: false
 // TODO 4: Add a method to `restaurant` object
 // Add a method named `changeRating` that updates the `rating` property.
 // Add another method named `reopen` that sets the `inStock` property to true.
+const restaurant = {
+  name: 'Chipotle',
+  type: 'fast-casual',
+  rating: 4.1,
+  reopen() {
+    console.log(`${this.name} is open right now until 9 pm CST.`);
+  },
+  changeRating(change) {
+    this.rating += change;
+  },
+  status() {
+    console.log(`${this.name} is a ${this.type} with a rating of ${this.rating}.`);
+  }
+};
 
+restaurant.status();
+restaurant.reopen();
+restaurant.status();
+console.log(restaurant.rating);
+restaurant.changeRating(-0.1);
+restaurant.status();
+console.log(restaurant.rating);
 
 // Example 5: Adding Methods to a Student Object
 const student = {
