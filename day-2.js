@@ -25,7 +25,26 @@ console.log(book.pages); // Output: 300
 // Add a method named `watch` that logs a message: "You watched {movie.title}."
 // Add another method named `updateYear` that updates the `year` property.
 // Use `this` to access and modify the properties.
+const movie = {
+  title: 'Despicable Me 4',
+  director: 'Chris Renaud and Patrick Delage',
+  leading: 'Steve Carell',
+  year: 2024,
 
+  watch: function(){
+    console.log(`${this.title} directed by ${this.director}, starring ${this.leading} made in ${this.year} has been watched and is very funny!`);
+  },
+
+  updateMovie: function(newYear){
+    this.year = newYear;
+  }
+};
+
+console.log(movie.title);
+console.log(movie.year);
+movie.watch();
+movie.updateMovie(2024);
+console.log(movie.year);
 
 // Example 2: Adding Methods to a Pet Object
 const pet = {
