@@ -203,4 +203,25 @@ console.log(student.fullName()); // Output: John Doe
 // TODO 5: Add a method to `house` object
 // Add a method named `renovate` that increases the `size` property by a given number.
 // Add another method named `changeAddress` that updates the `address` property.
+const house = {
+  address: '57384 Mount Pleasant Road, Bogalusa, LA 70427',
+  size: 1500,
+  hasGarage: true,
+  renovate() {
+    this.size += 1500;
+    console.log(`${this.address}`);
+  },
+  changeAddress(newAddress) {
+    this.address = newAddress;
+  },
+  status() {
+    console.log(`${this.address} has ${this.size} square feet and sits on over 3 acres of land.`);
+  }
+};
 
+house.status();
+house.changeAddress('301 Welch Drive, Bogalusa, LA 70427');
+house.status();
+console.log(house.size);
+house.renovate();
+house.status();

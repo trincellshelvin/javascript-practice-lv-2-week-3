@@ -129,7 +129,7 @@ console.log(student.grade);     // Output: A
 
 const house = {
   address: '57384 Mount Pleasant Road, Bougalusa, LA 70427',
-  size: '3 bed 2 bath',
+  size: '1500',
   hasGarage: true
 };
 
