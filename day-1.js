@@ -47,8 +47,8 @@ console.log(pet.age);     // Output: 5
 // Log each property using dot notation.
 const city = {
   name: 'Baton Rouge',
-  meaning: 'Red Stick in French',
-  water: 'Mississippi River',
+  population: '450,544',
+  country: 'USA', 
   parish: 'East Baton Rouge Parish',
   year: 1894
 };

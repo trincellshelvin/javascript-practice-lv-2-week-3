@@ -31,11 +31,11 @@ const movie = {
   leading: 'Steve Carell',
   year: 2024,
 
-  watch: function(){
+  watch: function () {
     console.log(`${this.title} directed by ${this.director}, starring ${this.leading} made in ${this.year} has been watched and is very funny!`);
   },
 
-  updateMovie: function(newYear){
+  updateMovie: function (newYear) {
     this.year = newYear;
   }
 };
@@ -68,6 +68,30 @@ console.log(pet.name);  // Output: Paws
 // TODO 2: Add a method to `city` object
 // Add a method named `addPopulation` that increases the `population` property by a given number.
 // Add another method named `rename` that updates the `name` property using `this`.
+const city = {
+  name: 'Baton Rouge',
+  population: 450544, // Changed to a number
+  country: 'USA',
+  parish: 'East Baton Rouge Parish',
+  year: 1894,
+
+  status: function () {
+    console.log(`${this.city} has ${this.population} people in it.`)
+  },
+  addPopulation: function () {
+    this.population += 2000;
+    console.log(`${this.name} in 2022 had a population of 450,544. Looking at trends, it may increase by ${this.population}.`);
+  },
+  rename: function (newName) {
+    this.name = newName;
+    console.log(`Baton Rouge is French for ${this.name}.`);
+  }
+};
+city.status();
+city.addPopulation();
+city.status();
+city.rename('Red Stick');
+console.log(city.name);
 
 
 // Example 3: Adding Methods to a Car Object
@@ -93,7 +117,7 @@ console.log(car.year); // Output: 2023
 // Add another method named `describe` that logs a message with the `brand`, `processor`, and `ram` properties.
 
 
- // Example 4: Adding Methods to a Product Object
+// Example 4: Adding Methods to a Product Object
 const product = {
   name: 'Laptop',
   price: 999.99,
