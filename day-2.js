@@ -115,7 +115,26 @@ console.log(car.year); // Output: 2023
 // TODO 3: Add a method to `computer` object
 // Add a method named `upgradeRAM` that updates the `ram` property.
 // Add another method named `describe` that logs a message with the `brand`, `processor`, and `ram` properties.
+const computer = {
+  brand: 'Apple iMac',
+  processor: 'Apple M3 Chip',
+  ram: 8,
+  status: function () {
+    console.log(`${this.brand} has ${this.processor} with ${this.ram}.`)
+  },
+  Mac(){
+    console.log(`${this.brand} ${this.processor} and ${this.ram} is the latest model of iMac`);
+  },
+  upgradeRam: function(addedRam){
+    this.ram = addedRam;
+  }
 
+};
+computer.status();
+computer.upgradeRam(16);
+computer.status();
+computer.Mac();
+console.log(computer.processor);
 
 // Example 4: Adding Methods to a Product Object
 const product = {
