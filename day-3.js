@@ -18,7 +18,16 @@ console.log(defaultBook); // Output: { title: 'The Great Gatsby', author: 'F. Sc
 // - name: 'Buddy'
 // - species: 'Dog'
 // - age: 2
-
+function createPet(){
+  let pet = {
+    name: 'Buddy',
+    species: "dog",
+    age: 2,
+  }
+  return pet
+}
+const defaultPet = createPet();
+console.log(defaultPet);
 
 // Example 2: Factory Function with Default Properties
 function createCar() {
@@ -38,7 +47,15 @@ console.log(defaultCar); // Output: { brand: 'Toyota', model: 'Corolla', year: 2
 // - name: 'Springfield'
 // - population: 30000
 // - country: 'USA'
-
+function createCity(){
+  return{
+  name: 'Springfield',
+  population: 30000,
+  country: 'USA'
+  };
+}
+const defaultCity = createCity();
+console.log(defaultCity);
 
 // Example 3: Factory Function with Arguments
 function createBookWithDetails(title, author, pages) {
