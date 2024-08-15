@@ -75,7 +75,11 @@ console.log(specificBook); // Output: { title: '1984', author: 'George Orwell', 
 // - name
 // - species
 // - age
-
+function createPetWithDetails(){
+  name: 'Buddy',
+  species: 'dog',
+  age: 8
+}
 
 // Example 4: Factory Function with Arguments
 function createCarWithDetails(brand, model, year) {
