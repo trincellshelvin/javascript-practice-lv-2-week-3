@@ -75,12 +75,16 @@ console.log(specificBook); // Output: { title: '1984', author: 'George Orwell', 
 // - name
 // - species
 // - age
-function createPetWithDetails(){
-  name: 'Buddy',
-  species: 'dog',
-  age: 8
+function createPetWithDetails(name, species, age){
+  return{
+  name: name,
+  species: species,
+  age: age
+  };
 }
 
+const specificPet = createPetWithDetails('Buddy', 'dog', 8);
+console.log(specificPet);
 // Example 4: Factory Function with Arguments
 function createCarWithDetails(brand, model, year) {
   return {
@@ -99,8 +103,15 @@ console.log(specificCar); // Output: { brand: 'Tesla', model: 'Model S', year: 2
 // - name
 // - population
 // - country
-
-
+function createCitywithDetails(name, population, country){
+  return{
+    name: name,
+    population: population,
+    country: country
+  };
+}
+const newCity = createCitywithDetails('Bougalousa',  50000, 'USA');
+console.log(newCity);
 // Example 5: Factory Function with Method
 function createPetWithMethod(name, species, age) {
   return {
@@ -124,4 +135,27 @@ myPet.celebrateBirthday(); // Output: Happy Birthday Bella! You are now 5 years 
 // - population
 // - country
 // Add a method named `changePopulation` that takes a number as an argument and updates the `population` property.
+function createCityWithMethod(name, population, country) {
+  return {
+    name: name,
+    population: population,
+    country: country,
+    setPopulation(newPopulation) {
+      this.population = newPopulation;
+    },
+    status() {
+      console.log(`The city population size is ${this.population}.`);
+    },
+    changePopulation() {
+      this.population += 2000;
+      console.log('Population increased by 2000');
+    },
+  };
+}
 
+const city = createCityWithMethod('Bogalusa', 30000, 'USA');
+console.log(city.population); 
+city.changePopulation(); 
+console.log(city.population);
+city.setPopulation(45000); 
+city.status(); 
