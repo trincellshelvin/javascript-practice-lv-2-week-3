@@ -54,7 +54,8 @@ songs.push(createSong('Imagine', 'John Lennon', 1971));
 
 // TODO 3: Add two songs more of your own
 songs.push(createSong('Hotel California', 'Eagles', 1976));
-songs.push(createSong('Dancing Queen' 'ABBA', 1976));
+
+songs.push(createSong('Dreams', 'Fleetwood Mac', 1976));
 
 console.table(songs);
 
@@ -72,9 +73,10 @@ console.log("Fourth song: Title = " + songs[3].title + ", Artist = " + songs[3].
 // TODO 4:
 // Modify the details of the fifth song
 // - Artist and year of the fifth song
+songs[5].artist = "Patti Labelle";
+songs[5].year = "1978";
 
-
-
+console.log("Fifth Song: Artist = " + songs[5].artist + ", Year = " + songs[5].year);
 console.log("\nExample 5: Modifying the Array");
 
 // Example 5: Modifying the Array
@@ -88,4 +90,5 @@ songs[0] = createSong('Eleanor Rigby', 'The Beatles', 1966);
 console.log("Updated first song: Title = " + songs[0].title + ", Artist = " + songs[0].artist + ", Year = " + songs[0].year);
 
 // TODO 5: Completely Replace the details of the second song.
-
+songs[2] = createSong('Time', 'Pink Floyd', 1973);
+console.log("updated second song: Title = " + songs[2].title + ", Artist = " + songs[2].artist + ", Year = " + songs[2].year);
