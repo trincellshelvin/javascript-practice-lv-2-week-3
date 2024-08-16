@@ -35,7 +35,6 @@ console.log("\nExample 2: Accessing Objects in the Array");
 // - The title and artist of the first song
 // - The artist and year of the second song
 // - The title and year of the third song
- 
 // Example
 console.log("First song: Title = " + songs[0].title + ", Artist = " + songs[0].artist);
 // TODO: Access and log the details of the rest of the songs in the array
